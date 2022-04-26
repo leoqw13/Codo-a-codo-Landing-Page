@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav{
+  min-height: 15vh;
+  background-color: #353a40;
+}
+
+.headboard-l{
+display: flex;
+align-items: center;
+width: 30%;
+height: 100%;
+}
+
+.icon{
+  width: 30%;
+  min-width: 30%;
+  margin-left: 2em;
+}
+.title-icon{
+  color: white;
+  font-size: larger;
+
+}
+
+.list{
+  width: calc(100% - 20%);
+  display: flex;
+  justify-content: right !important ;
+font-size: medium;
+align-items: center;
+margin-right: 2em;
+ 
+}
+
+.list ul{
+  display: flex;
+}
+.list span{
+  color: #999da0;
+}
+.list a:hover{
+  transition: 0.55;
+  font-weight: bold;
+}
+
+
+.card a{
+  padding: .2rem .4rem .2rem .4rem;
+  font-size: .6rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+}
+
+.title-centered{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0em 2em 0em;
+}
+
+.card{
+width: 18rem;
+  height: 80%;
+  margin: 2em;
+  overflow: hidden;
+}
+
+.bgHonolulu{
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+.description-bs{
+  padding: 1em;
+  background-color:#353a40 ;
+  border-left: 1px solid white;
+  color: white;
+    height: 100%;
+}
+
+.title-ba{
+  font-size: xx-large;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  align-items: center;
+}
+.underline{
+  border-bottom: 2px dotted black !important;
+
+}
+
+.form form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  margin-top: 1em;
+
+}
+.form input{
+  width: calc(100% / 2.1);
+  height: 2.5em;
+  padding-left: 0.5em;
+  background: none;
+  border: 1px solid gainsboro;
+  border-radius: 0.4em;
+  outline: 0px;
+  margin-bottom: 1em;
+}
+.form input::placeholder{
+  font-size: larger;
+  padding-left: 1em;
+}
+.form textarea{
+  width: 98%;
+  height: 10em;
+  background: none;
+  border: 1px solid gainsboro;
+  border-radius: 0.4em;
+  outline: 0px;
+  margin-bottom: 1em;
+  
+}
+.form textarea::placeholder{
+  font-size: xx-large;
+  padding-left: 1em;
+}
+.remember{
+  width: 98%;
+  display: flex;
+  justify-items: left;
+  color:#8a8a8a ;
+}
+.submit{
+  width: 99% !important;
+  background-color:#96c93e !important ;
+  margin-top: 1em;
+  color: white;
+}
+
+
+.cover{
+  background: url(/img/ba1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+min-height: 85vh;
+display: flex;
+padding: 0;
+}
+
+
+.dark{
+  width: 100%;
+  min-height: 85vh;
+  background-color:rgba(0, 0, 0, 0.486); 
+  display: flex;
+  align-items: center;
+  justify-content: right;
+ 
+}
+
+
+.header{
+      width: 37%;
+  height: 60%;
+  text-align: right;
+  margin-right: 6%;
+  color: white;
+}
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  background: linear-gradient(to right,#1d3744, #1d5271) ;
+}
+
+footer li{
+  margin: 1.5em;
+}
+
+footer li:hover{
+  font-weight: bold;
+  border-bottom: 1px white;
+}
+
+@media screen and (max-width: 900px) {
+  .header{
+    float: none;
+    width: 80%;
+    height: 60%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .dark{
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .d-flex{flex-direction: column;
+  }
+}
