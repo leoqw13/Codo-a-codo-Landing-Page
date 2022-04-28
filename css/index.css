@@ -164,7 +164,7 @@ a{
 
 
 .cover{
-  background: url(/img/ba1.jpg);
+  background: url(img/ba1.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
