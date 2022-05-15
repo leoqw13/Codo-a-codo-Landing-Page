@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/tickets.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Conviertete en orador</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md nav" style="min-height: 10vh;">
+    <div class="container-fluid d-flex ">
+
+      <div class="headboard-l" style="padding-left: 3rem; ">
+        <span class="title-icon" style="font-size:x-large "> Conf Bs As</span>
+      </div>
+
+      <div class="list">
+        <div class="justify-content-end ">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="/index.html"><span>La Conferencia </span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html#ora"><span>Los Oradores</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html#lug"><span>El lugar y la fecha</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="/index.html#form">Conviertete en
+                    orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="/tickets.html">Comprar Tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <!--Cards-->
+  <div class="d-flex justify-content-center m-4 flex-wrap">
+   
+    
+    <div class="prices m-1" style="border: 3px solid #007bff;">
+      <h4 class=" text-justify">Estudiante</h4>
+      <p style="font-size: x-large;">Tiene un descuento <br><br> <strong>80%</strong></p>
+      <p class="light-text">* presentar documentación</p>
+    </div>
+    <div class="prices m-1" style="border: 3px solid #17a2b8;">
+      <h4 class=" text-justify">Trainee</h4>
+      <p style="font-size: x-large;">Tiene un descuento <br><br> <strong>50%</strong></p>
+      <p class="light-text">* presentar documentación</p>
+    </div>
+
+    <div class="prices m-1" style="border: 3px solid #ffc107;">
+      <h4 class=" text-justify">Junior</h4>
+      <p style="font-size: x-large;">Tiene un descuento <br><br> <strong>15%</strong></p>
+      <p class="light-text">* presentar documentación</p>
+    </div>
+
+
+  <!--form-->
+  <div class="container sale">
+    
+    <div class="text-center">VENTA</div>
+    <div class="text-center mb-4"><h1>VALOR DE TICKET $200</h1> </div>
+    <form action="#" method="post">
+      <div class="row">
+        <div class="col-md mb-3">
+          <input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
+        </div>
+     
+        <div class="col-md mb-3">
+          <input type="text" name="lastName" id="lastName" placeholder="Apellido" class="form-control">
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <input type="email" name="email" id="email" placeholder="Correo" class="form-control">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md mb-3"> <label class="mb-3" for="amount">Cantidad</label>
+            <input  type="number" name="amount" id="amount" placeholder="Cantidad" class="form-control" onkeyup=" calculateValue()">
+          </div>
+          <div class="col-md mb-3"><label  class="mb-3" for="category">Categoria</label>
+            <select class="form-select" aria-label="Default select example" id="category" onchange=" calculateValue()">
+              <option selected>Seleccione Categoria</option>
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+                <option value="3">Junior</option>
+            </select>
+          </div>
+        </div>
+     <div class="row">
+       <div class="col-md">
+         <div class="result">Total a pagar: $ <span id="total"></span></div>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-md" >
+      <input type="reset" value="Borrar" class="buttons">
+    </div>  
+    <div class="col-md" >
+      <input type="submit" value="Resumen" class="buttons">
+    </div>
+    </div>
+    </form>
+  </div>
+
+  
+  <footer>
+          <div class="container-fluid" >
+        <ul class="footer justify-content-center pb-1 ">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Preguntas Frecuentes</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contáctanos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Prensa</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Conferencias</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Términos y condiciones</a></li>
+  <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Privacidad</a></li>
+   <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Estudiantes</a></li>
+  </div>
+        </ul>
+      </footer>
+   
+<script src="main.js"></script>
+</body>
+
+</html>
